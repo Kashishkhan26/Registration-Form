@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <title> Registration Form</title>
+    <link rel="stylesheet" href="registration.css">
+</head>
+<body>
+   <div class="contant">
+        <nav>Registration Form</nav>
+        <div class="input-form">
+            <h1>Register Here</h1>
+            <form action="#" id="input-form">
+                <div class="input-group">
+                    <input type="text" class="input-field" id="name" required autofocus>
+                    <label for="name">Name</label>
+                </div>
+                <div class="input-group">
+                    <input type="email" class="input-field" id="email" required>
+                    <label for="email">Email</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input-field" id="course" required>
+                    <label for="course">Current enrolled course</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input-field" id="branch" required>
+                    <label for="branch">Branch</label>
+                </div>
+                <div class="input-group">
+                    <input type="number" class="input-field" id="age" required>
+                    <label for="age">Age</label>
+                </div>
+                <div class="input-group">
+                    <input type="text" class="input-field" id="addr" required>
+                    <label for="addr">Address</label>
+                </div>
+                <div class="input-select">
+                    <label for="gender" class="Label">Gender</label><br>
+                    <input type="radio" id="male" value="Male" name="gender">Male
+                    <input type="radio" id="female" value="Female" name="gender">Female
+                </div>
+                <div class="input-select">
+                    <label for="skills" class="Label">Skills</label><br>
+                    <input type="checkbox" name="skills" id="communication" value="Communication">Communication
+                    <input type="checkbox" name="skills" id="C programming" value="C programming">C programming
+                    <input type="checkbox" name="skills" id="C++ programming" value="C++ Programming">C++ Programming
+                    <input type="checkbox" name="skills" id="Python" value="Python">Python 
+                    <input type="checkbox" name="skills" id="Java" value="Java">Java 
+                    <input type="checkbox" name="skills" id="Web development" value="Web development">Web development
+                </div>
+                <div class="buttons">
+                    <button type="button" id="add-btn">ENROLL STUDENT</button>
+                    <button type="button" id="delete-btn">DELETE</button>
+                </div>
+            </form>
+        </div>
+        <div class="line"></div>
+        <div class="table">
+            <h1>Students Detail</h1>
+            <h2><u>Registered Profile</u></h2>
+            <div class="scroll">
+                <table id="display">
+                    <tr>
+                        <th><u>Information</u></th>
+                        <th><u>image</u></th>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <script src="registration.js"></script>
+</body>
+</html>
